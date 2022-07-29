@@ -65,7 +65,3 @@ div > button {
 button:hover {
     transform: scale(1.1);
 }
-
-ul {
-    columns: 2;
-}
