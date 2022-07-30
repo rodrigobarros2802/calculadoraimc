@@ -65,3 +65,25 @@ div > button {
 button:hover {
     transform: scale(1.1);
 }
+
+main > table {
+    display: block;
+}
+
+main > h1 {
+    background-color: #fe8617;
+    text-align: left;
+    right: 30%;
+    color: white;
+    height: 60px;
+    width: 500px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+td:nth-child(1) {
+    width: 50%;
+    text-align: left;
+}
+
+
