@@ -13,14 +13,17 @@ body {
 
 header {
     background-color: #fe8617;
-    text-align: center;
+    border-radius: 10px 10px 0 0;
+    margin-top: 20px;
+    margin-left: 400px;
+    margin-right: 900px;
+    position: relative;
     color: white;
-    padding: 5px;
 }
 
 main > h3 {
     text-align: center;
-    margin: 10px 10px;
+    margin: 20px 500px 20px 440px;
     color: #fe8617;
 }
 
@@ -40,11 +43,16 @@ div > label {
 
 div > input {
     font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #fe8617;
+    font-weight: bold;
     display: inline-flex;
-    border-radius: 10px;
     border-color: #fe8617;
+    border-radius: 10px;
     margin: 5px;
-    height: 50px;
+    height: 60px;
+    width: 170px;
 }
 
 div > button {
@@ -53,7 +61,7 @@ div > button {
     font-size: 20px;
     font-weight: bold;
     color: white;
-    margin: 10px;
+    margin: 20px;
     width: 150px;
     height: 40px;
     border-radius: 20px;
@@ -66,10 +74,11 @@ button:hover {
     transform: scale(1.1);
 }
 
-main > h1 {
-    margin-top: 50px;
+h1 {
     background-color: #fe8617;
-    text-align: left;
+    position: relative;
+    left: 30%;
+    text-align: center;
     right: 30%;
     color: white;
     height: 60px;
@@ -78,6 +87,8 @@ main > h1 {
 }
 
 table {
+    position: relative;
+    left: 30%;
     font-size: 20px;
     color: #447ca4;
     width: 500px;
@@ -100,5 +111,13 @@ table tr:nth-child(odd) {
 
 table tr:nth-child(even) {
     background-color: #e8e8e8;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    margin-left: 395px;
+    margin-right: 430px;
+    margin-bottom: 30px;
 }
 
