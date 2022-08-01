@@ -9,26 +9,26 @@
 
 body {
     font-family: 'Kanit', sans-serif;
+    margin: auto;
+    max-width: 800px;
+    min-width: 320px;
 }
 
 header {
     background-color: #fe8617;
     border-radius: 10px 10px 0 0;
     margin-top: 20px;
-    margin-left: 400px;
-    margin-right: 900px;
     position: relative;
     color: white;
 }
 
 main > h3 {
     text-align: center;
-    margin: 20px 500px 20px 440px;
     color: #fe8617;
+    margin: 20px 0 20px 0;
 }
 
 main > div {
-    margin: 10px 10px;
     border: 20px black;
     text-align: center;
 }
@@ -76,33 +76,29 @@ button:hover {
 
 h1 {
     background-color: #fe8617;
-    position: relative;
-    left: 30%;
     text-align: center;
-    right: 30%;
     color: white;
-    height: 60px;
-    width: 500px;
     border-radius: 10px 10px 0px 0px;
 }
 
 table {
     position: relative;
-    left: 30%;
+    margin: auto;
+    text-align: center;
     font-size: 20px;
     color: #447ca4;
-    width: 500px;
     margin-bottom: 20px;
     border-collapse: collapse;
+    width: 800px;
 }
 
 tr {
+    margin: auto;
     height: 60px;
 }
 
-td:nth-child(1) {
-    width: 50%;
-    text-align: left;
+td {
+    margin: auto;
 }
 
 table tr:nth-child(odd) {
@@ -113,11 +109,8 @@ table tr:nth-child(even) {
     background-color: #e8e8e8;
 }
 
-p {
+footer > p {
     font-size: 16px;
-    text-align: center;
-    margin-left: 395px;
-    margin-right: 430px;
+    text-align: justify;
     margin-bottom: 30px;
 }
-
