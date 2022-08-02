@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <title>Calculadora de IMC</title>
 </head>
 <body>
@@ -16,11 +17,11 @@
         <h3>Preencha os campos abaixo e descubra o seu IMC (Índice de Massa Corporal)</h3>
         <div class="botao">
             <label for="quilo">Seu Peso (Kg):</label>
-            <input type="text" name="quilo">
-            <label for="altura">Sua Altura (M):</label>
-            <input type="text" name="altura">
+            <input class="quilograma" type="number" name="quilo">
+            <label for="alt">Sua Altura (M):</label>
+            <input class="metro" type="number" name="alt">
             <br>
-            <button type="submit">Calcular</button>
+            <button class="calculo" type="submit">Calcular</button>
         </div>
 
         <div class="tabela">
@@ -52,5 +53,7 @@
         <p>Qualquer que seja o resultado, não se preocupe. A primeira coisa a se fazer é procurar um especialista de sua confiança. Pode ser um cardiologista, endocrinologista, nutrólogo, nutricionista, enfim, busque auxílio profissional e não acredite em milagres. A obesidade é uma doença que se combate todos os dias, dia após dia.
         </p>
     </footer>
+    
 </body>
+
 </html>
