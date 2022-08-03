@@ -71,6 +71,16 @@ button:hover {
     transform: scale(1.1);
 }
 
+span {
+    font-family: 'Kanit', sans-serif;
+    background-color: #fe8617;
+    color: white;
+    border-radius: 10px;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+}
+
 .tabela {
     font-family: 'Kanit', sans-serif;
     color: #447ca4;

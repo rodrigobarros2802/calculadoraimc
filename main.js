@@ -1,56 +1,27 @@
-    let peso = document.querySelector("#calcular");
-    peso.addEventListener("click", function(e) {
-        e.preventDefault();
-        let kilo = document.querySelector("#kilo");
-        let valorKg = kilo.value;
-        console.log(valorKg);
-    })
+//Função Calcular
+function calcular() {
+    //Variáveis
+    var peso = document.getElementById("kilo").value;
+    var alt = document.getElementById("altura").value;
+    var res = document.getElementById("res");
+    var calculo = Math.floor(peso / (alt * alt));
 
-    let alt = document.querySelector("#calcular");
-    alt = addEventListener("click", function(e) {
-        e.preventDefault();
-        let altura = document.querySelector("#altura");
-        let valorAlt = altura.value;
-        console.log(valorAlt);
-    })
+    //Convertendo Inteiro para Float
+    peso = parseFloat(peso);
+    alt = parseFloat(alt);
 
-    let calculo = document.querySelector("#calcular");
-    calculo = addEventListener("click", function(e) {
-        e.preventDefault();
-        let span = document.querySelector("#resultado");
-        let resultadoImc = span.value;
-        console.log(resultadoImc);
-    })
-    
-    /*
-    let calcurarImc = document.querySelector("#calcular");
-    calcularImc = addEventListener("click", function(e) {
-    e.preventDefault();
-    let calculoImc = document.querySelector("#calcular");
-    let calculo = calculoImc.value;
-    console.log(calculo);
-    })
-    */
-
-
-    /*
-    let altura = document.querySelector("#altura");
-    let resultado = parseInt(peso) / parseInt((altura * altura));
-    document.querySelector("resultado").innerHTML
-    */
-
-    /*
-    if (calcularImc < 18.5) {
-        console.log("Seu peso está baixo.");
-    } if (calcularImc >= 18.5 && calcularImc <= 24.9) {
-        console.log("Seu peso está normal ou adequado.");
-    } if (calcularImc >= 25 && calcularImc <= 29.9) {
-        console.log("Sobrepeso");
-    } if (calcularImc >= 30 && calcularImc <= 34.9) {
-        console.log("Obesidade Grau 1");
-    } if (calcularImc >= 35 && calcularImc <= 39.9) {
-        console.log("Obesidade Grau 2");
-    } else if (calcularImc >= 40) {
-        console.log("Obesidade Grau 3 ou Mórbida");
+    //Condição If e Else
+    if (calculo < 18.5) {
+        res.innerHTML = "Seu IMC é " + calculo + " Seu peso está baixo.";
+    } if (calculo >= 18.5 && calculo <= 24.9) {
+        res.innerHTML = "Seu IMC é " + calculo + " Seu peso está normal ou adequado.";
+    } if (calculo >= 25 && calculo <= 29.9) {
+        res.innerHTML = "Seu IMC é " + calculo + " Sobrepeso.";
+    } if (calculo >= 30 && calculo <= 34.9) {
+        res.innerHTML = "Seu IMC é " + calculo + " Obesidade Grau 1.";
+    } if (calculo >= 35 && calculo <= 39.9) {
+        res.innerHTML = "Seu IMC é " + calculo + " Obesidade Grau 2.";
+    } else if (calculo >= 40) {
+        res.innerHTML = "Seu IMC é " + calculo + " Obesidade Grau 3 ou Mórbida.";
     }
-    */
+}
