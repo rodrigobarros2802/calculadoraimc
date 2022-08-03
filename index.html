@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
     <title>Calculadora de IMC</title>
 </head>
 <body>
@@ -14,13 +15,14 @@
 
     <main>
         <h3>Preencha os campos abaixo e descubra o seu IMC (Índice de Massa Corporal)</h3>
-        <div class="botao">
+        <div>
             <label for="quilo">Seu Peso (Kg):</label>
-            <input class="quilograma" type="number" name="quilo">
+            <input id="kilo" type="number" name="quilo" placeholder="Digite seu peso">
             <label for="alt">Sua Altura (M):</label>
-            <input class="metro" type="number" name="alt">
+            <input id="altura" type="number" name="alt" placeholder="Digite sua altura">
             <br>
-            <button class="calculo" type="submit">Calcular</button>
+            <button id="calcular" type="submit">Calcular</button>
+            <span id="resultado">Resultado</span>
         </div>
 
         <div class="tabela">
@@ -53,5 +55,4 @@
         </p>
     </footer>
 </body>
-<script src="main.js"></script>
 </html>
