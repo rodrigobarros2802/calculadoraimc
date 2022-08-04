@@ -1,5 +1,5 @@
-//Função Calcular
-function calcular() {
+//Função Calcular IMC
+function calcularImc() {
     //Variáveis
     var peso = document.getElementById("kilo").value;
     var alt = document.getElementById("altura").value;
@@ -25,3 +25,11 @@ function calcular() {
         res.innerHTML = "Seu IMC é " + calculo + " Obesidade Grau 3 ou Mórbida.";
     }
 }
+
+//Evento Clicar com Enter
+document.addEventListener("keypress", function(e) {
+    if(e.key === "Enter") {
+        const botao = document.querySelector("#calcular");
+        botao.click();
+    }
+})
